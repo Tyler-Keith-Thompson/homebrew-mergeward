@@ -1,9 +1,9 @@
 class Mergeward < Formula
   desc "Code review tool for macOS with MCP server for Claude integration"
   homepage "https://mergeward.com"
-  url "https://github.com/Tyler-Keith-Thompson/MergeWard/releases/download/v0.0.1/mergeward-0.0.1-universal-apple-darwin.tar.gz"
-  sha256 "PLACEHOLDER"
   version "0.0.1"
+  url "https://github.com/Tyler-Keith-Thompson/MergeWard/releases/download/v#{version}/mergeward-#{version}-universal-apple-darwin.tar.gz"
+  sha256 "PLACEHOLDER"
   license "Proprietary"
 
   depends_on :macos
