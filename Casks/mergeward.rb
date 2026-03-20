@@ -1,8 +1,8 @@
 cask "mergeward" do
   desc "Code review tool for macOS with MCP server for Claude integration"
   homepage "https://mergeward.com"
-  version "0.0.26"
-  sha256 "7558e9915c9a6f3eb322bb61d7cc1cb82c5d68b8bb6623fd980faf926d273484"
+  version "0.0.27"
+  sha256 "023c3450694c952ed4afae5563c7973ef2c3517e88d7dff59796cd2abd789940"
   url "https://github.com/Tyler-Keith-Thompson/homebrew-mergeward/releases/download/v#{version}/mergeward-#{version}-universal-apple-darwin.zip"
   name "MergeWard"
   depends_on macos: ">= :sequoia"
