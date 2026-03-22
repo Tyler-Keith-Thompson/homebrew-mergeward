@@ -1,8 +1,8 @@
 cask "mergeward" do
   desc "Code review tool for macOS with MCP server for Claude integration"
   homepage "https://mergeward.com"
-  version "0.0.47"
-  sha256 "5098b3ed5e4cb211df1195af0badb9fb9c53a03d87a90ff9d93960e747c34419"
+  version "0.0.48"
+  sha256 "47dc7c855a9235bb8c870b87d4ebf00a1dfefa2ed0370bff8a942096935a9c3c"
   url "https://github.com/Tyler-Keith-Thompson/homebrew-mergeward/releases/download/v#{version}/mergeward-#{version}-universal-apple-darwin.zip"
   name "MergeWard"
   depends_on macos: ">= :sequoia"
@@ -17,6 +17,10 @@ cask "mergeward" do
     # Backward-compat symlink: existing MCP configs reference mergeward-mcp
     system_command "/bin/ln",
       args: ["-sf", "mergeward", "#{HOMEBREW_PREFIX}/bin/mergeward-mcp"],
+      sudo: false
+    # Auto-update Claude Code plugin skills (idempotent)
+    system_command "#{HOMEBREW_PREFIX}/bin/mergeward",
+      args: ["install", "claude-plugin"],
       sudo: false
   end
 
