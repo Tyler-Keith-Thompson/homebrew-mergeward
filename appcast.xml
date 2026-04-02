@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>MergeWard Changelog</title>
+        <link>https://mergeward.com</link>
+        <language>en</language>
+        <item>
+            <title>Version 0.0.60</title>
+            <sparkle:version>0.0.60</sparkle:version>
+            <sparkle:shortVersionString>0.0.60</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Thu, 02 Apr 2026 05:32:01 +0000</pubDate>
+            <enclosure url="https://github.com/Tyler-Keith-Thompson/homebrew-mergeward/releases/download/v0.0.60/mergeward-0.0.60-universal-apple-darwin.zip"
+                       sparkle:edSignature="j2oEMR35j+dLoUJ/FVSi5E2CeDvXtqGVZTz/6dB0qmnrgVMtxOQ5Izjr5iinazyApM49kYqjjAwjmBxISRxUBg=="
+                       length="36863778"
+                       type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
