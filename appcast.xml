@@ -92,5 +92,16 @@
                        length="28941619"
                        type="application/octet-stream" />
         </item>
+        <item>
+            <title>Version 0.0.69</title>
+            <sparkle:version>0.0.69</sparkle:version>
+            <sparkle:shortVersionString>0.0.69</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <pubDate>Sun, 26 Apr 2026 04:21:28 +0000</pubDate>
+            <enclosure url="https://github.com/Tyler-Keith-Thompson/homebrew-mergeward/releases/download/v0.0.69/mergeward-0.0.69-universal-apple-darwin.zip"
+                       sparkle:edSignature="ejOZ9eTU8h5drlvga80We6uEyuKKnqIkB8395Mma6Jd60Sy+tQMKcdt/+089I2rFdgRa845PBcYja0EehqdCCA=="
+                       length="28941630"
+                       type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
