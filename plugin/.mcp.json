@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mergeward": {
+      "command": "mergeward",
+      "args": ["mcp"]
+    }
+  }
+}

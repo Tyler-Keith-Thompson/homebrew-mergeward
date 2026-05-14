@@ -1,0 +1,16 @@
+{
+  "name": "mergeward-marketplace",
+  "owner": {
+    "name": "MergeWard"
+  },
+  "plugins": [
+    {
+      "name": "mergeward",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Tyler-Keith-Thompson/homebrew-mergeward.git",
+        "path": "plugin"
+      }
+    }
+  ]
+}
