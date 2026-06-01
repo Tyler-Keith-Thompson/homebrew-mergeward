@@ -27,6 +27,19 @@ cask "mergeward" do
     system_command "/usr/bin/xattr",
       args: ["-cr", "#{appdir}/MergeWard.app"],
       sudo: false
+    # CRITICAL: also strip com.apple.quarantine from the CLI binary. Homebrew
+    # auto-strips it for `app` artifacts but NOT for `binary` artifacts, so
+    # without this the binary triggers Gatekeeper's online notary-ticket
+    # round-trip on first run (bare binaries can't have tickets stapled).
+    # If the user's Mac can't reach Apple's notary CDN — propagation lag right
+    # after a release, corporate firewall, spotty network — they see "Apple
+    # could not verify mergeward" and the `mergeward install claude-plugin`
+    # step below blows up. The binary IS signed and notarized; we're just
+    # skipping the network round-trip Gatekeeper would otherwise do, which
+    # the local signature already covers.
+    system_command "/usr/bin/xattr",
+      args: ["-cr", "#{staged_path}/mergeward/mergeward"],
+      sudo: false
     # Backward-compat symlink: existing MCP configs reference mergeward-mcp
     system_command "/bin/ln",
       args: ["-sf", "mergeward", "#{HOMEBREW_PREFIX}/bin/mergeward-mcp"],
